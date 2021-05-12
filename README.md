@@ -1,5 +1,3 @@
-# Supervised-nonnegative-matrix-factorization
-
 Thank you for downloading this MATLAB package for NMTF classification. 
 
 This folder contains Matlab code related to the following paper:
@@ -27,18 +25,29 @@ variant-disease train network:VD_tr.txt
 variant-disease test network:VD_ts.txt
 disease-disease network:Disease_Disease.txt
 
-==================================
-Main function: NMTF_Classification_Main.m
+
+Functions:
+
+NMTF_Classification_Main.m: this code, is the Main function of our algorithm, supervised nonnegative matrix factorization(sNMTF) which get the data and implement the algorithm on it.   
  
 
-sNMTF optimization of objective function: 
-factorization_Classification.m
+factorization_Classification.m: this function optimizes the sNMTF  objective function and give back the factorization matrix of train data.
 
-Variant-varinat network construction: Variant_Varient_Network.m
+Variant_Varient_Network.m: construct the Variant-varinat network 
 
-others: block_matrices.m, matrix_initialization.m, generic_random_forests.m 
+block_matrices.m: construct the relation and intratype matrices from input data(.txt) 
+
+matrix_initialization.m: initilize the factorized matrices. 
+
+
+generic_random_forests.m : implement the random forest classification 
 
  
+
+
+
+
+
 
 
 
